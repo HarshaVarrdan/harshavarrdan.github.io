@@ -1,5 +1,7 @@
 var riddleNumber = 1;
 
+var Answers = ["hello","data","1889","Yuvan","0.9"];
+
 document.addEventListener("DOMContentLoaded", function () {
     const params = new URLSearchParams(window.location.search);
     riddleNumber = params.get("riddle");
@@ -9,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function checkPassword() {
     const userPassword = document.getElementById("password").value;
-    const correctPassword = "datum2425";
+    const correctPassword = "datum@2425";
     if (userPassword === correctPassword) {
         document.querySelector('.password-container').style.display = 'none';
         document.getElementById(`riddle${riddleNumber}-container`).style.display = 'block';
@@ -21,7 +23,7 @@ function checkPassword() {
 function checkAnswer() {
     const userAnswer = document.getElementById("answer").value.trim().toUpperCase();
     const teamNumber = document.getElementById("team-number").value.trim();
-    const correctAnswer = "I LOVE YOU";
+    const correctAnswer = Answers[riddleNumber];
     if (teamNumber === "" || userAnswer === "") {
         document.getElementById("result").innerHTML = "<p>Please enter both your team number and your answer.</p>";
         return;
