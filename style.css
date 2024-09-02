@@ -99,6 +99,10 @@ button:hover {
 }
 
 @media (max-width: 600px) {
+  body {
+    align-items: flex-start; /* Horizontally center the container */
+    margin-left: 15%;
+  }
   .container {
     width: max-content;
     padding: 20px;
