@@ -3,7 +3,7 @@ var riddleNumber = 1; //
 var Answers = ["hello","data","1889","yuvan","0.9"];
 var submitTexts = ["Find 2nd QR","Find 3rd QR","Find 4th QR","Find 5th QR","Complete"];
 
-var SearchPlaces = ["Search near Conference Hall Notice Board", "Search near Opposite to Digital Reading Room","Search near Flags","Search Below Quadrangle Staircase","Meet us in Computer Lab", ];
+var SearchPlaces = ["Search near Conference Hall Notice Board", "Search Opposite to Digital Reading Room","Search near Flags","Search Below Quadrangle Staircase","Meet us in Computer Lab", ];
 
 document.addEventListener("DOMContentLoaded", function () {
     const params = new URLSearchParams(window.location.search);
