@@ -1,4 +1,4 @@
-var riddleNumber = 1;
+var riddleNumber = 1; //
 
 var Answers = ["hello","data","1889","yuvan","0.9"];
 var submitTexts = ["Find 2nd QR","Find 3rd QR","Find 4th QR","Find 5th QR","Complete"];
