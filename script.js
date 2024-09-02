@@ -7,7 +7,10 @@ var SearchPlaces = ["Search near Lift", "Search near Library Bulletin Board","Se
 
 document.addEventListener("DOMContentLoaded", function () {
     const params = new URLSearchParams(window.location.search);
-    riddleNumber = params.get("riddle");
+    let riddleNumber = params.get("riddle");
+
+    // If you specifically want to remove "0628" from the riddleNumber:
+    riddleNumber = riddleNumber.replace("0628", "");
 
     console.log(riddleNumber);    
 });
